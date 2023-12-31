@@ -1,0 +1,170 @@
+.container-multibox {
+  @include devices(breackpoint-1440) {
+    width: calc(100% - 192px);
+  }
+  @include devices(breackpoint-1330) {
+    width: calc(100% - 70px);
+  }
+  @include devices(breackpoint-1200) {
+    width: calc(100% - 50px);
+  }
+  @include devices(breackpoint-450) {
+
+  }
+}
+
+.header {
+  @include devices(breackpoint-1150) {
+    &__logo img {
+      width: 200px;
+    }
+  }
+  @include devices(breackpoint-900) {
+    &__logo img {
+      width: 160px;
+    }
+  }
+  @include devices(breackpoint-768) {
+    &__logo img {
+      width: 145px;
+    }
+  }
+  @include devices(breackpoint-700) {
+    &__nav-top {
+      padding: 15px 0;
+    }
+  }
+  @include devices(breackpoint-450) {
+    &__logo img {
+      width: 225px;
+    }
+  }
+}
+
+.header-intro {
+  @include devices(breackpoint-1380) {
+    &__img-makeup-inner {
+      bottom: -235px;
+    }
+
+    &__img-makeup-inner img {
+      width: 1020px;
+    }
+  }
+
+  @include devices(breackpoint-1200) {
+    &__desc {
+      padding-top: 50px;
+    }
+  }
+
+  @include devices(breackpoint-1150) {
+    &__title {
+      font-size: 45px;
+    }
+
+    &__text {
+      width: 421px;
+      font-size: 16px;
+    }
+  }
+
+  @include devices(breackpoint-1100) {
+    &__img-makeup-inner {
+      right: -260px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    &__desc {
+      padding-top: 16px;
+      margin-bottom: 187px;
+    }
+
+    &__title {
+      font-size: 43px;
+      line-height: 114.286%;
+    }
+
+    &__text {
+      font-size: 15px;
+      letter-spacing: 0.14px;
+      width: 368px;
+      margin-bottom: 32px;
+    }
+
+    &__btn {
+      padding: 12px 0 12px 42px;
+      width: 161px;
+      padding-left: 30px;
+      font-size: 14px;
+      letter-spacing: 1.68px;
+    }
+
+    &__img-makeup-inner {
+      right: -243px;
+      bottom: -182px;
+
+      img {
+        width: 850px;
+      }
+    }
+  }
+
+  @include devices(breackpoint-900) {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 124%;
+    }
+  }
+
+  @include devices(breackpoint-700) {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__desc {
+      position: relative;
+      margin-bottom: 400px;
+    }
+
+    &__title {
+      width: 363px;
+    }
+
+    &__img-makeup-inner {
+      right: -181px;
+      top: 318px;
+    }
+
+    &__img-makeup-inner img {
+      width: 716px;
+    }
+  }
+
+  @include devices(breackpoint-450) {
+    &__desc {
+      margin-top: 43px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 116.667%;
+      width: 302px;
+    }
+
+    &__text {
+      font-size: 18px;
+      letter-spacing: 0.18px;
+      width: 302px;
+    }
+    &__img-makeup-inner {
+      top: 510px;
+      right: -212px;
+    }
+  }
+}

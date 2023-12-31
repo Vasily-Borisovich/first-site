@@ -1,0 +1,17 @@
+.socials-post {
+  @include devices(breackpoint-1440) {
+    &__inner-items {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  @include devices(breackpoint-700) {
+    
+
+    &__left, &__right {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.none {
+  display: none;
+}
+
+body {
+  font-family: $DMSans-Medium;
+}
+
+.container-multibox {
+  max-width: 1248px;
+  margin: 0 auto;
+}
+
+.container-bg {
+  background-color: #F5F8FF;
+
+}
+
+.flex {
+  display: flex;
+}
+
+.title {
+  font-family: $DMSerifText-Regular;
+  font-size: 48px;
+  line-height: 116.667%;
+  color: $color-black;
+}
+
+.btn  {
+  display: inline-flex;
+  font-family: $DMSans-Medium;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 300px;
+  border: 2px solid #4A4A4A;
+  cursor: pointer;
+}

@@ -1,0 +1,174 @@
+.tutorial {
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 136px;
+
+  &__title-inner {
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  &__title {
+    margin-bottom: 3px;
+  }
+
+  &__steps-inner {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 155px;
+  }
+
+  &__step1-inner {
+    margin-right: 110px;
+    margin-bottom: 74px;
+  }
+
+  &__step1-picture-inner {
+    position: relative;
+  }
+
+  &__step1-picture-inner::before,
+  &__step2-picture-inner::before,
+  &__step3-picture-inner::before {
+    position: absolute;
+    font-family: $DMSerifText-Regular;
+    font-size: 220px;
+    color: rgba(239, 128, 148, 1);
+  }
+
+  &__step1-picture-inner::before {
+    content: "1";
+    left: 26px;
+    top: 4px;
+  }
+
+  &__step1-dots,
+  &__step2-dots,
+  &__step2-had,
+  &__step3-dots {
+    width: inherit;
+
+    svg {
+      width: inherit;
+    }
+  }
+
+  &__step1-dots {
+    position: absolute;
+    left: -90px;
+    top: -15px;
+    z-index: -1;
+  }
+
+  &__step1-desc-inner {
+    flex-direction: column;
+    margin-top: 53px;
+    margin-left: 43px;
+  }
+
+
+  .step-title {
+    font-family: $DMSerifDisplay-Regular;
+    font-size: 36px;
+    line-height: 122.222%;
+    margin-bottom: 16px;
+  }
+
+  .step-text {
+    font-family: $DMSans-Regular;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+  }
+
+  &__step1-title {
+    width: 320px;
+  }
+
+  &__step1-text {
+    width: 391px;
+  }
+
+
+  &__step2-inner {
+    flex-direction: column;
+    margin-left: 300px;
+    margin-bottom: 75px;
+  }
+
+  &__step2-picture-inner {
+    position: relative;
+  }
+
+  &__step2-picture-inner::before {
+    content: "2";
+    bottom: -64px;
+    left: -68px;
+  }
+
+  &__step2-had {
+    position: absolute;
+    left: 202px;
+    top: -69px;
+    z-index: -1;
+  }
+
+  &__step2-dots {
+    position: absolute;
+    left: -68px;
+    bottom: 120px;
+    z-index: -1;
+  }
+
+  &__step2-desc-inner {
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  &__step2-text {
+    width: 409px;
+  }
+
+
+  &__step3-inner {
+    margin-right: 30px;
+  }
+
+  &__step3-picture-inner {
+    position: relative;
+  }
+
+  &__step3-picture-inner::before {
+    content: "3";
+    top: 15px;
+  }
+
+  &__step3-dots {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: -77px;
+  }
+
+  &__step3-desc-inner {
+    flex-direction: column;
+    margin-top: 88px;
+    margin-left: 43px;
+  }
+
+  &__step3-text {
+    width: 453px;
+  }
+
+  &__btn-inner {
+    text-align: center
+  }
+
+  &__btn {
+    padding: 20px 36px;
+    font-family: $DMSans-Bold;
+    font-size: 16px;
+    border: 4px solid #EF8094;
+  }
+}
+
+@import './tutorial-meda';

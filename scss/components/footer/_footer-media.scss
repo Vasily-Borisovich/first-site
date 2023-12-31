@@ -1,0 +1,139 @@
+.footer {
+  @include devices(breackpoint-1440) {
+    &__menu-inner {
+      gap: 130px;
+    }
+
+    &__menu-left, &__menu-right {
+      gap: 130px;
+    }
+
+    &__rigth-inner {
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+  }
+
+  @include devices(breackpoint-1150) {
+    &__menu-inner {
+      gap: 95px;
+    }
+
+    &__menu-left, &__menu-right {
+      gap: 95px;
+    }
+
+    &__rigth-text {
+      width: 546px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    &__menu-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__menu-left, &__menu-right {
+      gap: 225px;
+    }
+  }
+
+  @include devices(breackpoint-768) {
+    &__menu-inner {
+      align-items: flex-start;
+    }
+
+    &__menu-left {
+      gap: 183px;
+    }
+
+    &__menu-right {
+      gap: 212px;
+    }
+
+    &__rigth-text {
+      width: 487px;
+    }
+  }
+
+  @include devices(breackpoint-700) {
+    &__container {
+      padding: 44px 40px 17px 40px;
+    }
+
+    &__menu-inner {
+      padding-top: 40px;
+    }
+
+    &__contacts-inner {
+      flex-direction: column;
+      align-items: baseline;
+      gap: 15px;
+    }
+
+    &__menu-left {
+      gap: 130px;
+    }
+
+    &__menu-right {
+      gap: 155px;
+    }
+
+    &__rigth-text {
+      width: 380px;
+    }
+  }
+
+  @include devices(breackpoint-650) {
+    &__menu-left {
+      gap: 77px;
+    }
+
+    &__menu-right {
+      gap: 103px;
+    }
+  }
+
+  @include devices(breackpoint-500) {
+    &__menu-left {
+      gap: 77px;
+    }
+
+    &__menu-right {
+      gap: 103px;
+    }
+
+    &__menu-title {
+      font-size: 16px;
+      letter-spacing: 1.92px;
+    }
+
+    &__menu-link {
+      font-size: 12px;
+      letter-spacing: 0.84px;
+      margin-bottom: 20px;
+    }
+
+    &__rigth-text {
+      font-size: 11px;
+      letter-spacing: 1.32px;
+      width: 270px;
+      line-height: 15px;
+    }
+  }
+
+  @include devices(breackpoint-450) {
+    &__container {
+      padding: 34px 40px 17px 15px;
+    }
+
+    &__menu-left {
+      gap: 35px;
+    }
+
+    &__menu-right {
+      gap: 57px;
+    }
+  }
+}

@@ -1,0 +1,242 @@
+.tutorial {
+  @include devices(breackpoint-1024) {
+    &__title-inner {
+      margin-bottom: 45px;
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__title-underline svg {
+      width: 198px;
+    }
+
+    &__steps-inner {
+      margin-bottom: 68px;
+    }
+
+    &__step1-inner {
+      margin-right: 70px;
+    }
+
+    &__step1-picture {
+      width: 256px;
+    }
+
+    &__step1-picture-inner::before {
+      left: 21px;
+      top: -13px;
+    }
+
+    &__step1-dots {
+      width: 229px;
+      left: -68px;
+      top: -44px;
+    }
+
+    &__step1-desc-inner {
+      margin-left: 33px;
+      margin-top: 42px;
+    }
+
+    .step-title {
+      font-size: 32px;
+      line-height: 112.5%;
+    }
+
+    .step-text {
+      font-size: 14px;
+      letter-spacing: 0.14px;
+    }
+
+    &__step1-text {
+      width: 311px;
+    }
+
+
+    &__step2-picture {
+      width: 337px;
+    }
+
+    &__step2-picture-inner::before {
+      bottom: -80px;
+    }
+
+    &__step2-had {
+      width: 254px;
+      left: 145px;
+      top: -85px;
+    }
+
+    &__step2-dots {
+      width: 134px;
+      left: -52px;
+      bottom: 65px;
+    }
+
+    &__step2-text {
+      width: 325px;
+    }
+
+    &__step3-picture-inner::before {
+      top: -5px;
+    }
+
+    &__step3-picture {
+      width: 260px;
+    }
+
+    &__step3-dots {
+      width: 155px;
+      bottom: -20px;
+      right: -60px;
+    }
+
+    &__step3-text {
+      width: 345px;
+    }
+
+    .tutorial__btn {
+      padding: 16px 32px;
+      font-size: 12px;
+    }
+  }
+
+  @include devices(breackpoint-768) {
+    &__step1-inner {
+      margin-right: 0;
+    }
+
+    &__step2-inner {
+      margin-left: 200px;
+    }
+
+    &__step3-inner {
+      margin-right: 0;
+    }
+  }
+
+  @include devices(breackpoint-700) {
+    &__step3-desc-inner {
+      margin-left: 25px;
+    }
+  }
+
+  @include devices(breackpoint-650) {
+    &__step1-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__step1-desc-inner {
+      margin-left: 0;
+    }
+
+    &__step1-picture {
+      width: auto;
+    }
+
+    &__step1-dots {
+      width: auto;
+      left: -90px;
+      top: -15px;
+    }
+
+    &__step1-picture-inner::before {
+      left: 26px;
+      top: 4px;
+    }
+
+    .step-title {
+      font-size: 36px;
+      line-height: 122.222%;
+    }
+
+    .step-text {
+      font-size: 18px;
+      letter-spacing: 0.18px;
+    }
+
+    &__step1-desc-inner {
+      margin-top: 25px;
+    }
+
+    &__step1-title {
+      width: 286px;
+    }
+
+    &__step1-text {
+      width: 280px;
+    }
+
+    &__step2-inner {
+      margin-top: 200px;
+      margin-left: 0;
+      align-items: center;
+    }
+
+    &__step2-picture-inner::before {
+      top: -200px;
+      left: 60px;
+    }
+
+    &__step2-picture {
+      width: auto;
+    }
+
+    &__step2-dots {
+      width: auto;
+      left: -40px;
+      bottom: 40px;
+    }
+
+    &__step2-had {
+      display: none;
+    }
+
+    &__step2-desc-inner {
+      margin-left: 0;
+    }
+
+
+    &__step3-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__step3-picture {
+      width: auto;
+    }
+
+    &__step3-dots {
+      width: auto;
+      bottom: -8px;
+      right: -76px;
+    }
+  }
+
+  @include devices(breackpoint-500) {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__title-underline svg {
+      width: 248px;
+    }
+
+    &__step2-picture {
+      width: 380px;
+      margin-left: 30px;
+    }
+
+    &__step3-desc-inner {
+      margin-left: 10px;
+    }
+
+    &__step2-dots {
+      left: 0;
+      bottom: 16px;
+    }
+  }
+}

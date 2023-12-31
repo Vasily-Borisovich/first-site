@@ -1,0 +1,48 @@
+.socials-post {
+  background-color: #F5F8FF;
+  padding-top: 100px;
+  padding-bottom: 130px;
+
+  &__container {
+    max-width: 1339px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__inner-items {
+    position: relative;
+    column-gap: 30px;
+  }
+
+  &__left {
+    gap: 29px;
+  }
+
+  &__right {
+    gap: 29px;
+  }
+
+  &__item-text {
+    margin-top: 31px;
+    font-size: 26px;
+    font-family: $DMSans-Regular;
+    letter-spacing: 0.26px;
+  }
+
+  &__btn-inner {
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  &__btn {
+    padding: 20px 32px;
+    color: white;
+    background-color: #EF8094;
+    border: none;
+  }
+}
+
+@import './social-posts-media';

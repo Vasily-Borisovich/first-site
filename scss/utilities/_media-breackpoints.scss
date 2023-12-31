@@ -1,0 +1,114 @@
+// @mixin desktop-1860() {
+//   @media (max-width: $breackpoint_1860) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop-1440() {
+//   @media screen and (max-width: $breackpoint_1440) {
+//     @content;
+//   }
+// }
+
+// @mixin laptop-1024() {
+//   @media (max-width: $breackpoint_1024) {
+//     @content;
+//   }
+// }
+
+// @mixin laptop-768() {
+//   @media (max-width: $breackpoint_768) {
+//     @content;
+//   }
+// }
+
+// @mixin mobile-375() {
+//   @media (max-width: $breackpoint_375) {
+//     @content;
+//   }
+// }
+
+
+
+@mixin devices ($breackpoint) {
+  @if $breackpoint == breackpoint-1440 {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-1380 {
+    @media only screen and (max-width: 1380px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-1330 {
+    @media only screen and (max-width: 1330px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-1300 {
+    @media only screen and (max-width: 1300px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-1200 {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-1150 {
+    @media only screen and (max-width: 1150px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-1100 {
+    @media only screen and (max-width: 1100px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-1024 {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-900 {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-850 {
+    @media only screen and (max-width: 850px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-800 {
+    @media only screen and (max-width: 800px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-768 {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-700 {
+    @media only screen and (max-width: 700px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-650 {
+    @media only screen and (max-width: 650px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-500 {
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  @if $breackpoint == breackpoint-450 {
+    @media only screen and (max-width: 450px) {
+      @content;
+    }
+  }
+}

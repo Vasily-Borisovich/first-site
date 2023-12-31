@@ -1,0 +1,167 @@
+.nav {
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 2.24px;
+
+  &__list {
+    column-gap: 60px;
+    margin-right: 62px;
+    }
+
+  &__btn {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    padding: 8px 31px;
+  }
+  &__btn::after {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-48%);
+  }
+}
+
+.nav {
+  @include devices(breackpoint-1100) {
+    &__list {
+      column-gap: 45px;
+      margin-right: 35px;
+    }
+  }
+
+  @include devices(breackpoint-1024) {
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    &__list {
+      column-gap: 35px;
+      margin-right: 35px;
+    }
+  }
+
+  @include devices(breackpoint-900) {
+    font-size: 12px;
+    &__btn {
+      font-size: 10px;
+    }
+
+    &__list {
+      column-gap: 30px;
+      margin-right: 26px;
+    }
+  }
+
+  @include devices(breackpoint-768) {
+    font-size: 10px;
+    &__list {
+      column-gap: 26px;
+    }
+  }
+
+
+  @include devices(breackpoint-700) {
+    visibility: hidden;
+    flex-direction: column;
+    align-items: baseline;
+    position: fixed;
+    top: 7px;
+    right: -100%;
+    padding: 15px;
+    background-color: aqua;
+
+    &__list {
+      flex-direction: column;
+      row-gap: 5px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include devices(breackpoint-700) {
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 34px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .nav-btn > span,
+  .nav-btn > span::before,
+  .nav-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+  }
+  .nav-btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .nav-btn > span::after {
+    content: '';
+    top: 8px;
+  }
+}
+
+@include devices(breackpoint-450) {
+  .nav-btn {
+    top: 38px;
+  }
+  .nav-btn > span,
+  .nav-btn > span::before,
+  .nav-btn > span::after {
+    height: 5px;
+  }
+  .nav-btn > span::before {
+    content: '';
+    top: -9px;
+  }
+  .nav-btn > span::after {
+    content: '';
+    top: 9px;
+  }
+}
+
+// Checkbox
+#nav-toggle {
+  opacity: 0;
+}
+
+@include devices(breackpoint-700) {
+  #nav-toggle:checked ~ .nav-btn > span {
+    transform: rotate(45deg);
+  }
+  #nav-toggle:checked ~ .nav-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #nav-toggle:checked ~ .nav-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #nav-toggle:checked ~ .nav {
+    visibility: visible;
+    right: 0;
+  }
+
+  #nav-toggle:checked ~ .cover-bg {
+    display: block;
+  }
+
+  .nav-btn > span,
+  .nav-btn > span::before,
+  .nav-btn > span::after {
+    transition-duration: .25s;
+  }
+  .nav {
+    transition-duration: .40s;
+  }
+}

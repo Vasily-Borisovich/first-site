@@ -1,0 +1,93 @@
+.container-subscribe {
+  max-width: 1270px;
+}
+
+.subscribe {
+  padding-top: 36px;
+  padding-bottom: 35px;
+
+  &__title-inner {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 3px;
+  }
+
+  &__title-underline {
+    svg {
+      width: inherit;
+    }
+  }
+
+  &__price-cards {
+    margin-top: 30px;
+  }
+
+  &__price-text-info {
+    margin-top: 43px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: $DMSans-Regular;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+  }
+}
+
+.price-card {
+  display: grid;
+  // grid-template-columns: 575px 575px;
+  grid-template-columns: minmax(305px, 575px) minmax(305px, 575px);
+  grid-template-rows: 291px;
+  justify-content: space-between;
+  column-gap: 60px;
+
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    // height: 291px;
+    border: 4px solid #c4c4c452;
+  }
+
+  &__title {
+    font-family: $DMSerifText-Regular;
+    font-size: 36px;
+    margin-bottom: 7px;
+  }
+
+  &__number {
+    font-family: $DMSans-Regular;
+    font-size: 44px;
+    letter-spacing: 5.28px;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    font-family: $DMSans-Bold;
+    padding: 20px 26px;
+    font-size: 16px;
+    letter-spacing: 1.92px;
+    color: white;
+    background-color: rgba(239, 128, 148, 1);
+    border: none;
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 51%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+
+    svg {
+      width: inherit;
+    }
+  }
+}
+@import './subscribe-media';
